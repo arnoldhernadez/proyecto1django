@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1> Lista Tareas</h1>
+    <ul>
+        {% for tarea in tareas %}
+        <li>{{ tarea }}</li>
+        <button><a href="{% url 'eliminar'tarea.id %}">Eliminar </a></button
+        {% endfor %}
+     </ul>
+{% endblock %}
